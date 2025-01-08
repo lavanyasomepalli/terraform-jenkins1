@@ -50,6 +50,6 @@ key_name="ec1"
 vpc_security_group_ids=["${aws_security_group.demosg.id}"]
 user_data="${file("userdata.sh")}"
 tags={
-Name="Webhooks"
+Name="Webhook"
 }
 }
