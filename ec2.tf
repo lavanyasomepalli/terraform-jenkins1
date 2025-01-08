@@ -43,10 +43,10 @@ Name="WEB SG"
 }
 
 resource "aws_instance" "public_subnet-1" {
-ami="ami-0ca9fb66e076a6e32"
+ami="ami-01816d07b1128cd2d"
 instance_type="t2.micro"
 count=1
-key_name="ec1"
+key_name="rocky"
 vpc_security_group_ids=["${aws_security_group.demosg.id}"]
 user_data="${file("userdata.sh")}"
 tags={
